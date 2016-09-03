@@ -1,7 +1,7 @@
 // Set up context menu at install time.
 chrome.runtime.onInstalled.addListener(function() {
   var context = "selection";
-  var title = "Get barcode for selected number";
+  var title = "Get barcode for selection";
   var id = chrome.contextMenus.create({"title": title, "contexts":[context],
                                          "id": "context" + context});
 });
